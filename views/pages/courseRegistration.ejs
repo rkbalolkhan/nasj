@@ -1,0 +1,247 @@
+<% layout('/layouts/boilerplate.ejs') -%>
+
+<body>
+  <div class="container form-container">
+    <h2 class="title mt-4 text-center">Admission Application</h2>
+    <form class="admission-form">
+      <hr />
+      <div class="form-section">
+        <h3 class="form-title">Student Details:</h3>
+        <div class="row">
+          <div class="col-md mt-2 mb-2">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="First Name"
+              name="student[personal][firstName]"
+            />
+          </div>
+
+          <div class="col-md mt-2 mb-2">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Middle Name"
+              name="student[personal][middleName]"
+            />
+          </div>
+
+          <div class="col-md mt-2 mb-2">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Last Name"
+              name="student[personal][lastname]"
+            />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md mt-2 mb-2 form-group">
+            <div class="input-group" id="dateInput">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Date of Birth"
+                aria-label="Date of Birth"
+                name="student[personal][dob]"
+              />
+              <div class="input-group-append">
+                <span><i class="fa-solid fa-calendar-days"></i></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md mt-2 mb-2">
+            <select
+              class="form-select"
+              aria-label="EducationQualification"
+              aria-placeholder="EducationQualification"
+              name="student[personal][EducationQualification]"
+            >
+              <option value="undefined" selected disabled>
+                Education Qualification
+              </option>
+              <option value="1">Under Graduade</option>
+              <option value="2">Post Graduade</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md mt-2 mb-2">
+            <select
+              class="form-select"
+              aria-label="MaritalStatus"
+              aria-placeholder="MaritalStatus"
+              name="student[personal][MaritalStatus]"
+            >
+              <option value="undefined" selected disabled>
+                Marital Status
+              </option>
+              <option value="1">Married</option>
+              <option value="2">Unmarried</option>
+            </select>
+          </div>
+
+          <div class="col-md mt-2 mb-2">
+            <select
+              class="form-select"
+              aria-label="Gender"
+              aria-placeholder="Gender"
+              name="student[personal][gender]"
+            >
+              <option value="undefined" selected disabled>Gender</option>
+              <option value="1">Male</option>
+              <option value="2">Female</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md mt-2 mb-2">
+            <input
+              type="number"
+              class="form-control"
+              placeholder="Phone Number"
+              name="student[personal][phoneNo]"
+            />
+          </div>
+
+          <div class="col-md mt-2 mb-2">
+            <input
+              type="email"
+              class="form-control"
+              placeholder="Email ID (Optional)"
+              name="student[personal][emailID]"
+            />
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="form-section">
+        <h3 class="form-title">Guardian's Details:</h3>
+
+        <div class="row">
+          <div class="col-md mt-2 mb-2">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Guardian's First Name"
+              name="student[guardian][firstName]"
+            />
+          </div>
+
+          <div class="col-md mt-2 mb-2">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Guardian's Middle Name (Optional)"
+              name="student[personal][middleName]"
+            />
+          </div>
+
+          <div class="col-md mt-2 mb-2">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Guardian's Last Name"
+              name="student[personal][lastname]"
+            />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md mt-2 mb-2">
+            <select
+              class="form-select"
+              aria-label="Guradian Relation"
+              aria-placeholder="Guradian Relation"
+              name="student[personal][guradianRelation]"
+            >
+              <option value="undefined" selected disabled>
+                Guardian's Relation with Student
+              </option>
+              <option value="1">Father</option>
+              <option value="2">Mother</option>
+              <option value="2">Husband</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="form-section">
+        <h3 class="form-title">Address:</h3>
+        <div class="row">
+          <div class="col-md mt-2 mb-2">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Flat No./ House No. "
+              name="student[personal][firstName]"
+            />
+          </div>
+
+          <div class="col-md mt-2 mb-2">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Floor No., Apartment Name, etc. (optional)"
+              name="student[personal][middleName]"
+            />
+          </div>
+
+          <div class="col-md mt-2 mb-2">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Street Name, Locality, etc"
+              name=""
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md mt-2 mb-2">
+            <select
+              class="form-select"
+              aria-label="MaritalStatus"
+              aria-placeholder="MaritalStatus"
+              name="student[personal][MaritalStatus]"
+            >
+              <option value="undefined" disabled>Country</option>
+              <option value="1" selected>India</option>
+            </select>
+          </div>
+
+          <div class="col-md mt-2 mb-2">
+            <select
+              class="form-select"
+              aria-label="Gender"
+              aria-placeholder="Gender"
+              name="student[personal][gender]"
+            >
+              <option value="undefined" selected disabled>State</option>
+              <option value="1" selected>Maharashtra</option>
+            </select>
+          </div>
+
+          <div class="col-md mt-2 mb-2">
+            <select
+              class="form-select"
+              aria-label="Gender"
+              aria-placeholder="Gender"
+              name="student[personal][gender]"
+            >
+              <option value="undefined" selected disabled>City</option>
+              <option value="1" selected>Solapur</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="row d-flex align-items-center justify-content-center">
+        <button class="main-btn mb-4 col-5 col-md-2" type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+</body>

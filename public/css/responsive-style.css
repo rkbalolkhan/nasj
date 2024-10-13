@@ -1,0 +1,235 @@
+@media (max-width: 991px) {
+  .text-content {
+    width: 100%;
+  }
+
+  .navigation-wrap .navbar-brand img {
+    height: 4rem;
+  }
+
+  .navigation-wrap {
+    justify-content: center;
+  }
+  .navigation-wrap .nav-link {
+    line-height: 1.875rem;
+  }
+
+  .about-section > .container > .container {
+    align-items: center;
+    width: 100vw;
+  }
+
+  #about-jamia-tajushariya .about-image,
+  #about-imam-ahmad-raza-IAEC .about-image {
+    order: 1;
+  }
+
+  #about-jamia-tajushariya .text-sec,
+  #about-imam-ahmad-raza-IAEC .text-sec {
+    order: 2;
+  }
+
+  .upcoming-events-section .carousel-item .carousel-caption p {
+    padding: 0;
+  }
+
+  .about-section.wrapper {
+    padding-top: 7rem;
+  }
+
+  .about-section .text-sec {
+    align-self: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 0.5px;
+  }
+
+  .text-sec h1 {
+    font-size: 1.5rem;
+  }
+
+  .text-sec p {
+    max-height: 30vh;
+    overflow-y: scroll;
+    margin-bottom: 1rem !important;
+  }
+
+  .text-sec .main-btn {
+    margin-top: 0rem !important;
+  }
+
+  .about-image {
+    margin-bottom: 1rem !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .about-section.wrapper {
+    padding-top: 10rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    line-height: 2.0625rem;
+  }
+
+  .top-text-container {
+    margin-left: 2rem;
+  }
+
+  .top-text-container p {
+    max-width: 21rem;
+  }
+
+  .top-banner {
+    height: 88.5vh;
+    margin-top: 10vh;
+  }
+
+  .story-section {
+    height: auto;
+    padding: 3rem 0;
+  }
+
+  .upcoming-events-section .carousel-item {
+    padding: 11rem 3.125rem;
+  }
+
+  .upcoming-events-section .carousel-caption h3 {
+    font-size: 2.5rem;
+  }
+  .upcoming-events-section .carousel-caption p {
+    font-size: 1.5rem !important;
+  }
+
+  .upcoming-events-section .carousel-caption .note {
+    font-size: 1.15rem !important;
+  }
+
+  .newsletter {
+    width: 75%;
+  }
+
+  .newsletter .main-btn {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .footer .footer-link,
+  .footer a i {
+    padding: 0 0.7rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+
+  .top-btns {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  .top-text-container {
+    position: absolute;
+    z-index: 5;
+    text-align: center;
+    margin: auto auto 5vh;
+    bottom: 0;
+  }
+
+  .top-banner {
+    background-size: cover;
+    background-position-x: 50%;
+  }
+
+  .top-text-container h1 {
+    display: block;
+    color: var(--white-color);
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .top-text-container p {
+    display: block;
+    color: yellow;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .top-text-container h3 {
+    display: block;
+    color: yellow;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .top-text-container p {
+    max-width: fit-content;
+  }
+
+  .background-black-overlay {
+    height: 90vh;
+    display: block;
+    position: absolute;
+    margin-top: 10vh;
+    top: 0;
+    opacity: 0.3;
+    z-index: 1;
+  }
+
+  .about-section.wrapper {
+    padding-top: 7rem;
+  }
+
+  .text-sec {
+    padding: 0 !important;
+  }
+
+  .upcoming-events-section .carousel-caption {
+    width: 100%;
+  }
+
+  .upcoming-events-section .carousel-caption h3 {
+    font-size: 1.8rem;
+    text-wrap: nowrap;
+  }
+  .upcoming-events-section .carousel-caption p {
+    font-size: 1.25rem !important;
+  }
+
+  .upcoming-events-section .carousel-caption .note {
+    font-size: 1rem !important;
+  }
+
+  .admission-form {
+    width: 95%;
+  }
+}
+
+@media (max-width: 500px) {
+  .top-banner {
+    height: 83vh;
+    background-size: cover;
+    background-position-x: 50%;
+  }
+}
+
+@media (max-width: 330px) {
+  .upcoming-events-section .carousel-item {
+    padding: 13rem 3.125rem;
+  }
+}
+
+:root {
+  --primary-color: #a82c48;
+  --secondary-color: #43121d;
+  --third-color: #f98169;
+  --white-color: #fff;
+  --text-color: #555;
+  --text-grey: #999;
+  --black-color: #000;
+  --primary-font: "Roboto", sans-serif;
+  --secondary-font: "Quicksand", sans-serif;
+}
