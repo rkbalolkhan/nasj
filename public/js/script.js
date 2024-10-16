@@ -4,8 +4,9 @@ document
   .forEach((a) => {
     a.classList.add("text-truncate");
   });
+
 window.onscroll = function () {
-  if (document.documentElement.scrollTop > 20) {
+  if (document.documentElement.scrollTop > 0) {
     nav.classList.add("scroll-on");
   } else {
     nav.classList.remove("scroll-on");
@@ -38,5 +39,8 @@ datePickers.forEach((d) => {
     },
   });
 });
+
+
+
 
 console.log("Tempus Dominus initialized");

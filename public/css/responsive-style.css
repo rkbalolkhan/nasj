@@ -7,6 +7,10 @@
     height: 4rem;
   }
 
+  .navbar-toggler-icon{
+    color:#fff !important;
+  }
+
   .navigation-wrap {
     justify-content: center;
   }
@@ -84,7 +88,6 @@
 
   .top-banner {
     height: 88.5vh;
-    margin-top: 10vh;
   }
 
   .story-section {
@@ -123,7 +126,6 @@
 }
 
 @media (max-width: 575.98px) {
-
   .top-btns {
     display: flex;
     gap: 2rem;
@@ -139,8 +141,21 @@
   }
 
   .top-banner {
-    background-size: cover;
     background-position-x: 50%;
+  }
+
+  .top-banner::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-color: #000;
+    opacity: 1;
+    z-index: 1;
+    opacity: 0.5;
   }
 
   .top-text-container h1 {
@@ -173,7 +188,6 @@
     height: 90vh;
     display: block;
     position: absolute;
-    margin-top: 10vh;
     top: 0;
     opacity: 0.3;
     z-index: 1;
@@ -206,6 +220,19 @@
   .admission-form {
     width: 95%;
   }
+
+  .map-container{
+    
+  gap: 1rem;
+  }
+
+  #map {
+  width: 95%;
+  height: 80%;
+  border: none;
+  border-radius: 0;
+  border: 0.3rem solid var(--text-grey);
+}
 }
 
 @media (max-width: 500px) {
@@ -233,3 +260,4 @@
   --primary-font: "Roboto", sans-serif;
   --secondary-font: "Quicksand", sans-serif;
 }
+

@@ -1,0 +1,46 @@
+<% layout('/layouts/boilerplate.ejs') -%>
+
+<% block('head').append('<link href="https://api.mapbox.com/mapbox-gl-js/v3.7.0/mapbox-gl.css"rel="stylesheet"/>') %>
+<% block('head').append('<script src="https://api.mapbox.com/mapbox-gl-js/v3.7.0/mapbox-gl.js"></script>') %>
+<script>
+
+  // Ensure the following line has valid JavaScript
+  let mapToken = "<%= process.env.MAPBOX_TOKEN %>";
+</script>
+
+<body>
+  <div class="container">
+    <h2 class="title m-2 text-center">Sunni Sahi-ul-Aqeeda mosque near you</h2>
+    <div class="map-container">
+      <div class="row">
+        <div class="check-button-wrap">
+        <input
+          type="radio"
+          name="find"
+          id="mosque-btn"
+          class="hidden radio-label"
+          checked
+        />
+        <label for="mosque-btn" class="check-button-label">
+          <span>Mosque</span>
+        </label>
+        <input
+          type="radio"
+          name="find"
+          id="dargah-btn"
+          class="hidden radio-label"
+        />
+        <label for="dargah-btn" class="check-button-label">
+          <span>Dargah</span>
+        </label>
+      </div>
+
+      </div>
+      <div id="map"></div>
+
+    </div>
+    
+  </div>
+
+  <script src="/js/map.js"></script>
+</body>
