@@ -13,7 +13,7 @@ const instituteSchema=new Schema({
     mainAddress:{
         address:{
             type:String,
-            required,
+            required:true,
         },
         geoCoordinates: {
             latitude: Number,

@@ -213,8 +213,8 @@ p {
 }
 
 .about-section.wrapper {
-  padding-top: 12.325rem;
-  padding-bottom: 4.125rem;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
 }
 
 .explore-course.wrapper {
@@ -238,6 +238,71 @@ p {
   color: var(--white-color);
 }
 
+/* ------------- PRELOADER ------------- */
+
+.preloader{
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--secondary-color);
+  z-index: 9999;
+}
+
+.preloader .img1{
+  position: absolute;
+  height: 30%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  opacity: 0.1;
+}
+
+.preloader .img2{
+  position: absolute;
+  height: 30%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  opacity: 1;
+  clip-path: inset(0% 0% 100% 0%);
+  animation: revealLogo 1s linear forwards;
+}
+
+@keyframes revealLogo {
+  0% {clip-path: inset(0% 0% 100% 0%);}
+  100% {clip-path: inset(0% 0% 0% 0%);}
+}
+
+.preloader .img2.afterReveal{
+  clip-path: inset(0% 0% 0% 0%);
+  animation: blink 5s linear infinite forwards; 
+}
+
+@keyframes blink {
+    0%, 50% {
+        opacity: 1;
+    }
+    25%, 75% {
+        opacity: 0;
+    }
+}
+
+.preloader p{
+  position: absolute;
+  text-align: center;
+  font-size: 0.8rem;
+  color: white;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 10%;
+}
+
+body{
+  overflow: hidden;
+}
+
+
 /* ------------- NAVBAR ------------- */
 
 header {
@@ -254,6 +319,7 @@ header {
   transition: all 0.3s ease-out;
   -webkit-transition: all 0.3s ease-out;
   background-color: var(--secondary-color);
+  padding: 0;
 }
 
 .navbar-brand img {
@@ -267,7 +333,7 @@ header {
 }
 
 .navigation-wrap .nav-item {
-  padding: 0 0.625rem;
+  padding: 0 0.55rem;
   transition: all 200ms linear;
   align-self: center;
   text-wrap: nowrap;
@@ -309,8 +375,41 @@ header {
   left: 0;
   width: 100%;
   background: var(--secondary-color);
-  box-shadow: 0 0.125rem 1.75rem 0 rgb(0, 0, 0, 0.9);
+  box-shadow: 0 0.125rem 1.7rem 0 rgb(0, 0, 0, 0.9);
   transition: all 0.15s ease-in-out 0s;
+}
+
+.social-media-container{
+  
+  
+  display: flex;
+  flex-direction: column;
+  position:sticky;
+  top: 50%;
+  width: 5rem;
+}
+
+.social-media-container a{
+  color: white;
+}
+
+.social-media-container a:hover{
+  color: white !important;
+}
+
+.social-media{
+  padding: 1rem 1rem;
+  width: 25%;
+  left: 0;
+  background-color: var(--primary-color);
+}
+
+.social-media:hover{
+  width: 100%;
+}
+
+.social-media:hover a::after{
+  content: " Whatsapp"
 }
 
 .top-banner {
@@ -322,18 +421,34 @@ header {
   background-position: 90% 0;
   display: flex;
   align-items: center;
+  padding-bottom: 8rem;
 }
 
-.background-black-overlay {
-  display: none;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 90%;
-  width: 100%;
-  background-color: var(--black-color);
-  z-index: 1;
+.top-text-container{
+  padding-top: 8rem;
+}
+
+.counter-section {
+  background-color: var(--primary-color);
+  padding: 2.5rem 0;
+  text-align: center;
+}
+
+
+
+.counter-section h1{
+  font-size: 3rem;
+  color: var(--white-color);
+}
+
+.counter-section h2{
+  font-size: 1.8rem;
+}
+
+.counter-section p {
+  color: var(--white-color);
+  text-transform: uppercase;
+  font-size: 1.3rem;
 }
 
 .about-section {
@@ -345,8 +460,19 @@ header {
   border-radius: 0.625rem;
 }
 
+.about-section .card img {
+  height: 50vh;
+  object-fit: contain;
+  border-radius: 0.625rem;
+}
+
 .about-section .text-sec {
   padding-left: 2rem;
+}
+
+.about-section .text-sec p {
+  max-height: 50vh;
+  overflow-y: scroll;
 }
 
 .course-card {

@@ -43,8 +43,9 @@
     <link rel="stylesheet" href="/css/responsive-style.css" />
   </head>
   <body>
-    <%- include("../includes/navbar.ejs")%> <%-body%> <%-
-    include("../includes/footer.ejs")%>
+    <%-include("../includes/preloader.ejs")%>
+    <%- include("../includes/navbar.ejs")%>
+    <%-body%> <%-include("../includes/footer.ejs")%>
 
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"

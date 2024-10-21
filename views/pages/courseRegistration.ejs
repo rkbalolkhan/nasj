@@ -30,7 +30,7 @@
               class="form-select"
               aria-label="Class"
               aria-placeholder="Class"
-              name="course[name]"
+              name="course[courseName]"
               id="classDropDown"
             >
               <option value="undefined" selected disabled>Select Course</option>
@@ -46,7 +46,7 @@
               class="form-select"
               aria-label="Class"
               aria-placeholder="Class"
-              name="course[classToAdmit]"
+              name="classToAdmit"
               id="classDropDown"
             >
               <option value="undefined" selected disabled>
@@ -86,7 +86,7 @@
               type="text"
               class="form-control"
               placeholder="Last Name"
-              name="studentDetails[lastname]"
+              name="studentDetails[lastName]"
             />
           </div>
         </div>
@@ -220,7 +220,7 @@
               <input
                 class="form-check-input"
                 type="radio"
-                name="hifz"
+                name="studentDetails[previosStudies][hifz]"
                 id="nazra"
                 value="false"
                 checked
@@ -232,8 +232,8 @@
               <input
                 class="form-check-input"
                 type="radio"
-                name="hifz"
-                id="hifz"
+                name="studentDetails[previosStudies][hifz]"
+                id="nazra"
                 value="true"
               />
               <label class="form-check-label" for="hifz"> Hifz </label>

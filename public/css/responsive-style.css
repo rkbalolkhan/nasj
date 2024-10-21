@@ -1,6 +1,18 @@
 @media (max-width: 991px) {
+  .preloader img{
+    height: 20% !important;
+  }  
+  
   .text-content {
     width: 100%;
+  }
+
+  .navigation-wrap .container{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    text-align: center;
   }
 
   .navigation-wrap .navbar-brand img {
@@ -13,6 +25,7 @@
 
   .navigation-wrap {
     justify-content: center;
+    padding: 0;
   }
   .navigation-wrap .nav-link {
     line-height: 1.875rem;
@@ -35,10 +48,6 @@
 
   .upcoming-events-section .carousel-item .carousel-caption p {
     padding: 0;
-  }
-
-  .about-section.wrapper {
-    padding-top: 7rem;
   }
 
   .about-section .text-sec {
@@ -69,9 +78,6 @@
 }
 
 @media (max-width: 767.98px) {
-  .about-section.wrapper {
-    padding-top: 10rem;
-  }
 
   h2 {
     font-size: 2rem;
@@ -152,10 +158,16 @@
     right: 0;
     bottom: 0;
     background-size: cover;
-    background-color: #000;
+    background-color: var(--black-color);
     opacity: 1;
     z-index: 1;
     opacity: 0.5;
+    
+  }
+
+    .top-banner.scroll-on::after {
+   margin-bottom: 1.1rem;
+    
   }
 
   .top-text-container h1 {
@@ -194,7 +206,8 @@
   }
 
   .about-section.wrapper {
-    padding-top: 7rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
 
   .text-sec {
